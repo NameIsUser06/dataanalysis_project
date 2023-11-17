@@ -5,7 +5,9 @@ const Header = () => {
   return (
     <Container>
       <StyledLink href={"/"}>CSV to Image</StyledLink>
-      <GithubLink href={"https://github.com/NameIsUser06"}>Github</GithubLink>
+      <GithubLink href={"https://github.com/NameIsUser06/dataanalysis_project"}>
+        Github
+      </GithubLink>
     </Container>
   );
 };
