@@ -30,8 +30,8 @@ def process_csv():
         plt.plot(df.loc[:, attribute2], df[attribute2], label=attribute2)
 
         plt.title('CSV 데이터 플롯', fontproperties=font_prop)
-        plt.xlabel('X축', fontproperties=font_prop)
-        plt.ylabel('Y축', fontproperties=font_prop)
+        plt.xlabel(attribute1, fontproperties=font_prop)
+        plt.ylabel(attribute2, fontproperties=font_prop)
 
         img = BytesIO()
         plt.savefig(img, format='png')
