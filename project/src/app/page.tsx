@@ -45,7 +45,7 @@ const Home: React.FC = () => {
       {/* 추가: 속성 1 입력란 */}
       <Input
         type="text"
-        placeholder="Enter Attribute 1"
+        placeholder="속성 1"
         value={attribute1}
         onChange={(e) => setAttribute1(e.target.value)}
       />
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
       {/* 추가: 속성 2 입력란 */}
       <Input
         type="text"
-        placeholder="Enter Attribute 2"
+        placeholder="속성 2"
         value={attribute2}
         onChange={(e) => setAttribute2(e.target.value)}
       />
@@ -115,10 +115,15 @@ const StyledImage = styled.img`
 const Input = styled.input`
   display: flex;
   align-items: center;
-  text-align: center;
+  text-align: left;
   justify-content: center;
   margin: 1.5rem auto;
-  height: 1.5rem;
+  padding: 6px 12px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.1);
+  font-weight: 500;
 `;
 
 interface ServerResponse {
